@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+import './index.css';
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
 
+let h1Generate;
+const h1gen = ()=>{
+  for (let index = 0; index < 1000; index++) {
+    h1Generate += '<h1>test1</h1>';
+  }
+  return(h1Generate);
+}
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar/>
+      {/* {h1gen()} */}
+      <Hero/>
     </div>
   );
 }
