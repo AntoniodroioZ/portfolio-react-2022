@@ -1,6 +1,7 @@
 import { useState } from "react";
 import icon from './images/icon.svg';
 
+
 const Navbar = ()=>{
     const [isNavExpanded, setIsNavExpanded] = useState(false);
     return(
@@ -12,7 +13,7 @@ const Navbar = ()=>{
                             <div className="flex text-white text-2xl md:text-4xl pl-6">
                                 <a className="pt-2 md:pt-1" href="https://www.antoniodroios.com"><img src={icon} alt="" className="w-4 md:w-6"/></a>
                                 
-                                <a href="https://www.antoniodroios.com" className="md:pt-0 pt-0.5 pl-4">Antoniodroios</a>
+                                <a href="https://www.antoniodroios.com" className="md:pt-0 pt-0.5 pl-4"><h1>Antoniodroios</h1></a>
                             </div>
                             <div className="pr-6">
                                 <button data-collapse-toggle="navbar-default" type="button" className="inline-flex  items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 " aria-controls="navbar-default" aria-expanded="false" 
@@ -27,6 +28,9 @@ const Navbar = ()=>{
                         <div className={isNavExpanded ?"text-white md:flex justify-between text-center font-bold":"text-white md:flex justify-between text-center font-bold hidden"}>
                             <div className="pt-4 md:pt-2 md:pl-4 md:pr-4 text-lg">
                                 <p><a href="#">Inicio</a></p>
+                            </div>
+                            <div className="pt-4 md:pt-2 md:pl-4 md:pr-4 text-lg">
+                                <p><a href="#SobreMi">Sobre mi</a></p>
                             </div>
                             <div className="pt-4 md:pt-2 md:pl-4 md:pr-4 text-lg">
                                 <p><a href="#">Proyectos</a></p>
