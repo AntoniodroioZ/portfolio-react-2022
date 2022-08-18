@@ -8,7 +8,7 @@ const Navbar = ()=>{
         <div className="fixed sticky top-0">
             <nav className="bg-color-main">
                 <div className="container mx-auto">
-                    <div className="md:flex justify-between pt-4 pb-4 md:pt-8 md:pb-8">
+                    <div className="md:flex justify-between pt-4 pb-4 md:pt-8 md:pb-8 md:h-28">
                         <div className="flex justify-between">
                             <div className="flex text-white text-2xl md:text-4xl pl-6">
                                 <a className="pt-2 md:pt-1" href="https://www.antoniodroios.com"><img src={icon} alt="" className="w-4 md:w-6"/></a>
@@ -25,18 +25,27 @@ const Navbar = ()=>{
                                 </button>
                             </div>
                         </div>
-                        <div className={isNavExpanded ?"text-white md:flex justify-between text-center font-bold":"text-white md:flex justify-between text-center font-bold hidden"}>
+                        {/* <div className={isNavExpanded ?"text-white md:flex justify-between text-center font-bold items-nav md:items-nav":"items-nav md:items-nav text-white md:flex justify-between text-center font-bold hidden"}> */}
+                        <div className={`text-white md:flex justify-between text-center font-bold items-nav md:items-nav ${isNavExpanded ? '':'hidden'} `}>
                             <div className="pt-4 md:pt-2 md:pl-4 md:pr-4 text-lg">
-                                <p><a href="#">Inicio</a></p>
+                                <p><a href="#" onClick={() => {
+                                    setIsNavExpanded(!isNavExpanded);
+                                }}>Inicio</a></p>
                             </div>
                             <div className="pt-4 md:pt-2 md:pl-4 md:pr-4 text-lg">
-                                <p><a href="#SobreMi">Sobre mi</a></p>
+                                <p><a href="#SobreMi" onClick={() => {
+                                    setIsNavExpanded(!isNavExpanded);
+                                }}>Sobre mi</a></p>
                             </div>
                             <div className="pt-4 md:pt-2 md:pl-4 md:pr-4 text-lg">
-                                <p><a href="#">Proyectos</a></p>
+                                <p><a href="#" onClick={() => {
+                                    setIsNavExpanded(!isNavExpanded);
+                                }}>Proyectos</a></p>
                             </div>
                             <div className="pt-4 md:pt-2 md:pl-4 md:pr-4 text-lg">
-                                <p><a href="#">Contacto</a></p>
+                                <p><a href="#" onClick={() => {
+                                    setIsNavExpanded(!isNavExpanded);
+                                }}>Contacto</a></p>
                             </div>
                         </div>
                     </div>

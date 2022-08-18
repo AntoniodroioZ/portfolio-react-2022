@@ -6,9 +6,9 @@ import profile from './images/profile.svg'
 const Hero = () =>{
     return(
         <div className="bg-color-main md:pt-32 md:pb-32">
-            <div className="container mx-auto md:pl-16 md:pr-16 md:pl-60 md:pr-60">
+            <div className="container mx-auto md:pl-16 md:pr-16 lg:pl-60 lg:pr-60">
                 <div className='md:flex justify-between items-center'>
-                    <div className='md:order-last'>
+                    <div className='md:order-last flex justify-center'>
                         <img className='w-full p-8 md:p-0 min-w-0 max-w-lg' src={profile} alt="" />
                     </div>
                     <div className='flex items-center text-center'>

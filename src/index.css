@@ -4,7 +4,12 @@
 
 :root{
     --main-color-letters:#A7D129;
+    /* --main-color-letters:#00BD95; */
 }
+/* *{
+    box-sizing: border-box;
+    outline: 1px solid lightgreen;
+} */
 
 .bg-color-main{
     background-color: #20272F;
@@ -26,7 +31,43 @@ body{
     width: 100%;
 }
 
-.box-shadow-custom{
-    -webkit-box-shadow: 0px 0px 15px 0px rgba(167,209,41,0.43); 
-    box-shadow: 0px 0px 15px 0px rgba(167,209,41,0.43);
+.items-nav{
+    height: 12rem;
+    transition: height 1s ease;
 }
+
+.items-nav
+.hidden{
+    height: 0rem;
+    transition: height 1s ease;
+}
+
+.hidden{
+    transition: 1s all;
+}
+
+.skill-close .arrow-close {
+    /* -webkit-transform: rotate(312deg); */
+    transform: rotate(180deg);
+    transition: all 0.3s ease;
+}
+
+.skill-open .arrow-open {
+    /* -webkit-transform: rotate(312deg); */
+    transform: rotate(0deg);
+    transition: all 0.3s ease;
+}
+
+.box-shadow-custom{
+    -webkit-box-shadow: 0px 0px 15px 0px var(--main-color-letters); 
+    box-shadow: 0px 0px 15px 0px var(--main-color-letters);
+}
+
+/* @media (min-width: 768px){
+    .md\:items-nav.hidden {
+        height: 0rem;
+    }
+    .md\:items-nav {
+        height: 0rem;
+    }
+} */

@@ -1,6 +1,6 @@
 const CardServices = (props) =>{
     return(
-        <div key={props.id} className="max-w-sm rounded overflow-hidden shadow-lg bg-color-main m-4 md:w-full" >
+        <div>
             <div className="flex justify-center">
                 <img className="h-36 p-1" src={props.image}/>
 
