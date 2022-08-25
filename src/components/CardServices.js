@@ -1,6 +1,6 @@
 const CardServices = (props) =>{
     return(
-        <div>
+        <div flex>
             <div className="flex justify-center">
                 <img className="h-36 p-1" src={props.image}/>
 

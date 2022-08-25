@@ -5,10 +5,10 @@ import icon from './images/icon.svg';
 const Navbar = ()=>{
     const [isNavExpanded, setIsNavExpanded] = useState(false);
     return(
-        <div className="fixed sticky top-0">
+        <div className="fixed sticky top-0 nav-zindex">
             <nav className="bg-color-main">
                 <div className="container mx-auto">
-                    <div className="md:flex justify-between pt-4 pb-4 md:pt-8 md:pb-8 md:h-28">
+                    <div className="md:flex justify-between pt-4 pb-4 md:h-20">
                         <div className="flex justify-between">
                             <div className="flex text-white text-2xl md:text-4xl pl-6">
                                 <a className="pt-2 md:pt-1" href="https://www.antoniodroios.com"><img src={icon} alt="" className="w-4 md:w-6"/></a>
@@ -38,12 +38,12 @@ const Navbar = ()=>{
                                 }}>Sobre mi</a></p>
                             </div>
                             <div className="pt-4 md:pt-2 md:pl-4 md:pr-4 text-lg">
-                                <p><a href="#" onClick={() => {
+                                <p><a href="#Portafolio" onClick={() => {
                                     setIsNavExpanded(!isNavExpanded);
                                 }}>Proyectos</a></p>
                             </div>
                             <div className="pt-4 md:pt-2 md:pl-4 md:pr-4 text-lg">
-                                <p><a href="#" onClick={() => {
+                                <p><a href="#Contacto" onClick={() => {
                                     setIsNavExpanded(!isNavExpanded);
                                 }}>Contacto</a></p>
                             </div>

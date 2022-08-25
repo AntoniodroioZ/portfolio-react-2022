@@ -19,6 +19,10 @@ body{
     background-color: #171C22;
 }
 
+.nav-zindex{
+    z-index: 1;
+}
+
 .text-color-main{
     color: var(--main-color-letters);
 }
@@ -33,35 +37,52 @@ body{
 
 .items-nav{
     height: 12rem;
-    transition: height 1s ease;
+    /* transition: height 1s ease; */
 }
 
 .items-nav
 .hidden{
     height: 0rem;
-    transition: height 1s ease;
+    /* transition: height 1s ease; */
 }
 
 .hidden{
-    transition: 1s all;
+    /* transition: 1s all; */
 }
 
 .skill-close .arrow-close {
-    /* -webkit-transform: rotate(312deg); */
-    transform: rotate(180deg);
-    transition: all 0.3s ease;
+    /* -webkit-transform: rotate(-180deg); */
+    transform: rotate(-180deg) translateZ(-1000px);
+    /* transition: all 0.3s ease; */
+    transition: 0.3s;
+    /* z-index: 0; */
 }
 
 .skill-open .arrow-open {
     /* -webkit-transform: rotate(312deg); */
-    transform: rotate(0deg);
-    transition: all 0.3s ease;
+    /* transform: rotate(0deg); */
+    transform: none;
+    /* transition: all 0.3s ease; */
+    transition: 0.3s;
+    /* z-index: 0; */
 }
 
 .box-shadow-custom{
     -webkit-box-shadow: 0px 0px 15px 0px var(--main-color-letters); 
     box-shadow: 0px 0px 15px 0px var(--main-color-letters);
 }
+.box-shadow-github{
+    -webkit-box-shadow: 0px 0px 15px 0px #444c52; 
+    box-shadow: 0px 0px 15px 0px #444c52;
+}
+.bg-color-github{
+    background-color: #444c52;
+}
+
+.bg-color-form{
+    background-color: #171C22;
+}
+
 
 /* @media (min-width: 768px){
     .md\:items-nav.hidden {

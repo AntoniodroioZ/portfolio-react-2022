@@ -8,17 +8,17 @@ const services=[
         id:1,
         image:backendImage,
         name:'Desarrollo backend.',
-        description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste reprehenderit excepturi in at minus deserunt aspernatur, ea tempore laborum distinctio nemo, veritatis ut. Laudantium libero, modi officiis necessitatibus veniam laborum!'
+        description:'Cuento con experiencia en diversas tecnologías para el desarrollo backend, cuento con experiencia creando APIs REST con Frameworks basados en MVC.'
     },{
         id:2,
         image:frontendImage,
         name:'Desarollo Frontend.',
-        description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste reprehenderit excepturi in at minus deser'
+        description:'Actualmente cuento con experiencia en la maquetación de sitios web, consumo de APIs y actualmente mejorando mis conocimientos en React.'
     },{
         id:3,
         image:webImage,
         name:'Bases de datos, cloud, entre otros.',
-        description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste reprehenderit excepturi in at minus deserunt aspernatur, ea tempore laborum distinctio nemo, veritatis ut. !'
+        description:'Diseño de bases de datos, consultas, uso de MV en Azure y Google Cloud.'
     }
     
 ];
@@ -40,8 +40,10 @@ const Services = () =>{
                         <p className="pr-1 md:pr-3">Lo que</p>
                         <p className="text-color-main">se hacer:</p>
                     </div>
-                    <div className="md:flex md:justify-around ">
-                        {listItems}
+                    <div className="flex justify-center">
+                        <div className="md:flex md:justify-around ">
+                            {listItems}
+                        </div>
                     </div>
                 </div>
             </div>

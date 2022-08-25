@@ -2,7 +2,7 @@ import TecnologiesCard from "./TecnologiesCard";
 
 const Habilities = () =>{
     return(
-        <div className="bg-color-main pt-8">
+        <div className="bg-color-main pt-20 pb-20 md:pt-40 md:pb-40">
             <div className="text-white container mx-auto text-center">
                 <div>
                     <p className="text-3xl">Mis habilidades</p>

@@ -12,8 +12,8 @@ const TecnologiesCard = (props) =>{
     let listItems = itemsIteration.map((item)=>{
         return(
             // <p key={item.nameTecnology}>{item.nameTecnology}</p>
-            <div key={item.nameTecnology} className="flex justify-between pt-1 pb-1">
-                <img src={item.img} alt={item.img} className="pr-4"/>
+            <div key={item.nameTecnology} className="flex justify-between items-center pt-1 pb-1">
+                <img src={item.img} alt={item.img} className="pr-20"/>
                 <p>{item.nameTecnology}</p>
             </div>
         );
@@ -27,10 +27,10 @@ const TecnologiesCard = (props) =>{
                                     setShowInfo(!showInfo);
                                     console.log(showInfo);
                                 }}>
-                <div className="w-12 md:w-32">
-                    <img src={TecnologiesObjs[props.idJson].img} alt="imagen" />
+                <div className="w-10 md:w-30 lg:w-36">
+                    <img className="" src={TecnologiesObjs[props.idJson].img} alt="imagen" />
                 </div>
-                <div className={`flex justify-between w-full ${showInfo ? 'skill-close':'skill-open'}`} >
+                <div className={`flex justify-between items-center  w-11/12 lg:pl-2 ${showInfo ? 'skill-close':'skill-open'}`} >
                     <p className="md:w-64 text-xl">{TecnologiesObjs[props.idJson].name}</p>
                     <i className={`fa fa-angle-down p-2 ${showInfo ? 'arrow-close':'arrow-open'}`}></i>
                 </div>
